@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: #e0e0e0;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #1a1a1a;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav a {
+    color: #ccc;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Hero */
+.hero {
+    padding: 60px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+}
+
+.hero-text p {
+    color: #aaa;
+}
+
+/* Image */
+.hero-img img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #333;
+    transition: 0.3s;
+}
+
+.hero-img img:hover {
+    transform: scale(1.05);
+    border-color: #666;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #444;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #666;
+}
+
+/* Sections */
+section {
+    padding: 40px 60px;
+}
+
+/* Cards */
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #222;
+}
+
+/* Skills Marquee */
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.track {
+    display: inline-block;
+    animation: scroll 12s linear infinite;
+}
+
+.track span {
+    display: inline-block;
+    background: #333;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Animation left → right */
+@keyframes scroll {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+}
